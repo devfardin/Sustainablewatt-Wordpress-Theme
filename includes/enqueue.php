@@ -7,20 +7,30 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class ThresholdWellnessAssets {
+define('SUSTAINABLEWATT_STYLE_URI', get_stylesheet_directory_uri() . '/assets/css/');
+define('SUSTAINABLEWATT_SCRIPT_URI', get_stylesheet_directory_uri() . '/assets/js/');
+
+
+class THRESHOLDWELLNESSASSETS {
     
     public function __construct() {
         add_action('wp_enqueue_scripts', [$this, 'enqueue_styles']);
-        add_action('wp_enqueue_scripts', [$this, 'enqueue_scripts']);
     }
     
     public function enqueue_styles() {
         // Main CSS with optimization
         wp_enqueue_style(
             'threshold-wellness-main',
-            THRESHOLD_WELLNESS_URL . '/assets/css/main.css',
+            SUSTAINABLEWATT_STYLE_URI . 'main.css',
             [],
-            THRESHOLD_WELLNESS_VERSION,
+            SUSTAINABLEWATT_VERSION,
+            'all'
+        );
+        wp_enqueue_style(
+            'threshold-wellness-products',
+            SUSTAINABLEWATT_STYLE_URI . 'products.css',
+            [],
+            SUSTAINABLEWATT_VERSION,
             'all'
         );
         
@@ -29,9 +39,9 @@ class ThresholdWellnessAssets {
     public function enqueue_scripts() {
         wp_enqueue_script(
             'threshold-wellness-main',
-            THRESHOLD_WELLNESS_URL . '/assets/js/main.js',
+            SUSTAINABLEWATT_SCRIPT_URI . '/assets/js/main.js',
             ['jquery'],
-            THRESHOLD_WELLNESS_VERSION,
+            SUSTAINABLEWATT_SCRIPT_URI,
             true
         );
     }

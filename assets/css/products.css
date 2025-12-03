@@ -1,0 +1,84 @@
+.sustainablewatt-products__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 576px) {
+    .sustainablewatt-products__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .sustainablewatt-products__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .sustainablewatt-products__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.sustainablewatt-product__item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--global-palette7);
+    border-radius: 14px;
+    /* make a small box-shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.sustainablewatt-product__item .product-thumbnail {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.sustainablewatt-product__item .product-thumbnail img {
+    transition: transform 0.5s ease;
+    width: 100% !important;
+    height: 350px !important;
+    object-fit: cover;
+}
+.sustainablewatt-product__item .product-thumbnail:hover img {
+    transform: scale(1.2);
+}
+.sustainablewatt-product__item .product-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sustainablewatt-product__item .product-info h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--e-global-color-text);
+    margin: 0;
+}
+/* button style */
+.sustainablewatt-product__item .product-info .product-button {
+    margin-top: auto;
+    padding: 10px 15px;
+    background-color: var(--e-global-color-text);
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+.sustainablewatt-product__item .product-info .product-button:hover {
+    background-color: var(--e-global-color-primary);
+}
