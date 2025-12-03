@@ -27,8 +27,15 @@ class THRESHOLDWELLNESSASSETS {
             'all'
         );
         wp_enqueue_style(
-            'threshold-wellness-products',
+            'sustainablewatt-product',
             SUSTAINABLEWATT_STYLE_URI . 'products.css',
+            [],
+            SUSTAINABLEWATT_VERSION,
+            'all'
+        );
+        wp_enqueue_style(
+            'sustainablewatt-single-product',
+            SUSTAINABLEWATT_STYLE_URI . 'single-product.css',
             [],
             SUSTAINABLEWATT_VERSION,
             'all'

@@ -6,3 +6,69 @@
 .row-item:hover {
   transform: translateY(-10px);  
 }
+
+.elementor-swiper-button-next svg, 
+.elementor-swiper-button-prev svg {
+    background: var(--e-global-color-text) !important;
+    border-radius: 50px;
+    padding: 10px;
+    fill: #fff !important;
+}
+
+/* Contact Button style */
+
+.fluentform label {
+    font-size: 19px !important;
+    font-weight: 400 !important;
+    color:var(--e-global-color-primary) !important;
+}
+.fluentform input, select {
+    padding: 13px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    height: 50px !important;
+    font-size: 18px;
+    color: black;
+}
+
+.fluentform input:focus {
+    border: 1px solid var( --e-global-color-primary ) !important;
+}
+.fluentform textarea {
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 14px !important;
+    font-size: 18px;
+    color: black;
+}
+.fluentform textarea:focus{
+    border: 1px solid var( --e-global-color-primary ) !important;
+}
+
+.ff-default .ff_btn_style {
+    background: var(--e-global-color-primary) !important;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    border: none;
+    border-radius: 6px 6px 6px 6px;
+    padding: 14px 25px 14px 25px;
+    transition: 0.4s;
+    width: 100%;
+}
+.ff-default .ff_btn_style:hover{
+    background:  var(--e-global-color-secondary) !important;
+    color: var(--e-global-color-text);
+}
+.ff-message-success{
+    border: 1px solid var(--e-global-color-primary);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: black;
+}
