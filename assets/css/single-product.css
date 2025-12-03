@@ -3,11 +3,13 @@
     padding: 20px;
     border-radius: 8px;
 }
+
 .product-breadcrumb a {
     color: var(--e-global-color-primary);
     text-decoration: none;
     transition: 0.3s;
 }
+
 .product-breadcrumb a:hover {
     color: var(--e-global-color-secondary);
 }
@@ -30,13 +32,14 @@
 }
 
 
-@media only screen and (min-width:768px){
-    .product-row  {
+@media only screen and (min-width:768px) {
+    .product-row {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
     }
 }
-@media only screen and (min-width:992px){
+
+@media only screen and (min-width:992px) {
     .product-row {
         gap: 40px;
     }
@@ -49,7 +52,8 @@
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.main-image img{
+
+.main-image img {
     border-radius: 10px;
 }
 
@@ -61,6 +65,7 @@
     background: var(--e-global-color-kadence8) !important;
     padding: 3px;
 }
+
 @media only screen and (min-width:576px) {
     #main-product-image {
         height: 450px;
@@ -87,12 +92,14 @@
     border-radius: 5px;
     cursor: pointer;
 }
-button.gallery-thumb:hover{
-    border-color:var(--e-global-color-primary) !important;
+
+button.gallery-thumb:hover {
+    border-color: var(--e-global-color-primary) !important;
     background: none !important;
 }
-button.gallery-thumb:focus{
-    border-color:var(--e-global-color-primary) !important;
+
+button.gallery-thumb:focus {
+    border-color: var(--e-global-color-primary) !important;
     background: none !important;
 }
 
@@ -114,10 +121,11 @@ button.gallery-thumb:focus{
 .product-info h1 {
     margin-bottom: 10px;
 }
-@media only screen and (min-width:768px){
+
+@media only screen and (min-width:768px) {
     .product-info h1 {
-    margin-bottom: 20px;
-}
+        margin-bottom: 20px;
+    }
 }
 
 .help-section {
@@ -131,19 +139,21 @@ button.gallery-thumb:focus{
     gap: 10px;
     width: 100%;
 }
-@media only screen and (min-width:768px){
-    .help-section{
+
+@media only screen and (min-width:768px) {
+    .help-section {
         margin: 20px 0;
     }
 }
 
 .help-section p {
-   
+
     margin: 0px;
-   
+
 }
 
-.contact-btn, .buy-btn {
+.contact-btn,
+.buy-btn {
     display: inline-block;
     color: white;
     padding: 10px 20px;
@@ -158,6 +168,7 @@ button.gallery-thumb:focus{
     background: var(--e-global-color-primary);
     transition: 0.3s;
 }
+
 .contact-btn:hover {
     background: var(--e-global-color-secondary);
     color: #f9f9f9;
@@ -167,6 +178,7 @@ button.gallery-thumb:focus{
     background: var(--e-global-color-secondary);
     transition: 0.3s;
 }
+
 .buy-btn:hover {
     background: var(--e-global-color-primary);
     color: #f9f9f9;
@@ -180,5 +192,5 @@ button.gallery-thumb:focus{
     border: 2px solid rgb(220, 252, 231);
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }

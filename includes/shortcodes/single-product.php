@@ -36,7 +36,8 @@ class SustainablewattSingleProductShortcode
         <!-- Breadcrumb -->
         <div class="product-breadcrumb">
             <div class="container">
-                <span> <a href="/"> Home ></a> <a href="/products">Products ></a> <?php echo esc_html($product->post_title); ?></span>
+                <span> <a href="/"> Home ></a> <a href="/products">Products ></a>
+                    <?php echo esc_html($product->post_title); ?></span>
             </div>
         </div>
 
