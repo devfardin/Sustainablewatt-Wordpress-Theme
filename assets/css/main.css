@@ -16,10 +16,12 @@
 }
 
 /* Contact Button style */
-
+..frm-fluent-form{
+  margin: 0 !important;
+}
 .fluentform label {
     font-size: 19px !important;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
     color:var(--e-global-color-primary) !important;
 }
 .fluentform input, select {
@@ -71,4 +73,6 @@
     font-weight: 400;
     line-height: 1.3em;
     color: black;
+    background: #fff;
+    z-index: 2;
 }
