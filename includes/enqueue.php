@@ -40,6 +40,13 @@ class THRESHOLDWELLNESSASSETS {
             SUSTAINABLEWATT_VERSION,
             'all'
         );
+        wp_enqueue_style(
+            'sustainablewatt-blog',
+            SUSTAINABLEWATT_STYLE_URI . 'blog.css',
+            [],
+            SUSTAINABLEWATT_VERSION,
+            'all'
+        );
         
     }
     
