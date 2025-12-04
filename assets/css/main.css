@@ -74,3 +74,9 @@
     background: #fff;
     z-index: 2;
 }
+
+/* Faq page */
+
+.faq_unorder_list{
+    margin: 10px 0;
+}

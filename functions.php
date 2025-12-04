@@ -26,6 +26,7 @@ class ThresholdWellnessFunctions
         require_once(SUSTAINABLEWATT_THEME_DIR . 'custom-post-type.php');
         require_once(SUSTAINABLEWATT_THEME_SHORTCODE_DIR . 'products.php');
         require_once(SUSTAINABLEWATT_THEME_SHORTCODE_DIR . 'single-product.php');
+        require_once(SUSTAINABLEWATT_THEME_SHORTCODE_DIR . 'blog.php');
     }
 
     public function init()
@@ -34,6 +35,8 @@ class ThresholdWellnessFunctions
         new SUSTAINABLEWATTCUSTOMPOSTTYPES();
         new SustainablewattProductsShortcode();
         new SustainablewattSingleProductShortcode();
+        new BLOG();
+
     }
 }
 
