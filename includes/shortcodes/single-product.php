@@ -78,13 +78,13 @@ class SustainablewattSingleProductShortcode
                             <?php $purchase_link = get_post_meta($product->ID, 'purchase_link', true); ?>
                             <?php if (!empty($purchase_link)): ?>
                                 <h3>Ready to Purchase?</h3>
-                                <p>Get this product directly from our trusted partner</p>
+                                <p>Please contact us for a tailored quotation</p>
                                 <div>
-                                    <a href="<?php echo esc_url($purchase_link); ?>" target="_blank" class="buy-btn">Buy Now</a>
+                                    <a href="<?php echo esc_url($purchase_link); ?>" target="_blank" class="buy-btn">Contact Us </a>
                                 </div>
                             <?php else: ?>
-                                <h3>Need Help?</h3>
-                                <p>Our team is here to help you choose the right product</p>
+                                <h3>Ready to Purchase?</h3>
+                                <p> Please contact us for a tailored quotation </p>
                                 <div>
                                     <a href="/contact" class="contact-btn">Contact Us</a>
                                 </div>
